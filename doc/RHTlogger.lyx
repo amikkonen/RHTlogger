@@ -129,6 +129,39 @@ No special software is needed to operate the logger.
 \end_layout
 
 \begin_layout Standard
+An initial two months comparison was made with Rotronic CL11 logger, see
+ Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Comparison-with-Rotronic-1"
+
+\end_inset
+
+.
+ No calibration was made for any of the sensors and the test was conducted
+ on my office desk, see Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Measurement-setup.-Radiation"
+
+\end_inset
+
+.
+ After offsetting the results, all devices give near identical results.
+ The differences arise from usability, price, and reliability.
+ Rotronic CL11 failed after the two months, most likely due to power grid
+ failure.
+ The Arduino based logger has suffered zero problems in testing.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 An initial comparison was made with Rotronic CL11 logger, see Fig.
  
 \begin_inset CommandInset ref
@@ -153,6 +186,11 @@ reference "fig:Measurement-setup.-Radiation"
  There is a near constant offset between the results and it would be easy
  to calibrate the sensors to give near identical results.
  A proper, scientific test would be required for a more detailed analysis.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -265,6 +303,39 @@ name "sec:Comparison-with-Rotronic"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+After writing these notes, a two moths test was performed, see Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Comparison-with-Rotronic-1"
+
+\end_inset
+
+ and Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Offsets-in-the"
+
+\end_inset
+
+.
+ The results were the same as in the shorter test discussed here.
+ Additionally, the Rotronic CL11 failed after about two months of operation.
+ Probably due to power failure (my desktop shut down around the same time
+ for no apparent reason).
+ From this longer test, some educated tests may also be made of the battery
+ life of the Arduino based logger, see Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Comparison-with-Rotronic-1"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -639,6 +710,197 @@ name "fig:Comparison-with-Rotronic"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Graphics
+	filename fig/long_rotronicCL11_comparisin_TRHw_offset.pdf
+	lyxscale 20
+	width 140text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+2 Months comparison with Rotronic CL11.
+ SHT31 and SI7021 results offset with constant values to correspond to Rotronic
+ CL11.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Comparison-with-Rotronic-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Sensor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+RH
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SHT31-D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.17C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-2.60%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Si7021
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++0.01C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1.47%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Offsets in the two moths test, Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Comparison-with-Rotronic-1"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Offsets-in-the"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Component
 \end_layout
@@ -657,10 +919,6 @@ Reported accuracy
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
